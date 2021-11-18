@@ -69,7 +69,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", url=f"https://telegra.ph/𝙄𝙢𝙖𝙜𝙞𝙣𝙚𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩-11-18"),
+                    InlineKeyboardButton("📚 Commands", url=f"https://telegra.ph/Waldo-Music-Bot-11-18"),
                     InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
