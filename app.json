@@ -8,9 +8,9 @@
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/levinachannel",
-    "repository": "https://github.com/levina-lab/video-stream",
-    "success_url": "https://t.me/dlwrml",
+    "website": "https://t.me/Wlkjn_Bot",
+    "repository": "https://github.com/HairyPotah02/Waldo4.1",
+    "success_url": "https://t.me/EngrJuanMala",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
@@ -47,22 +47,22 @@
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
             "required": true,
-            "value": "VeezSupportGroup"
+            "value": "LucidSupportGroup"
         },
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": true,
-            "value": "levinachannel"
+            "value": "LucidSupportChannel"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
             "required": true,
-            "value": "dlwrml"
+            "value": "EngrJuanMala"
         },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
-            "value": "Levina"
+            "value": "Waldo 4.2"
         }
     },
     "addons": [],
@@ -74,7 +74,7 @@
             "url": "heroku/nodejs"
         },
         {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+            "url": "https://github.com/akomic/heroku-buildpack-ffmpegthumbnailer.git"
         }
     ],
     "formation": {
