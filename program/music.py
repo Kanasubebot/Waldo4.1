@@ -146,7 +146,7 @@ async def play(_, m: Message):
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
-                                await m.reply_text(f"🚫 error: `{ep}`")
+                                await m.reply_text(f"naka ban si @baldomusicassistant kaya hindi ko maplay")
 
     else:
         if len(m.command) < 2:
@@ -191,7 +191,7 @@ async def play(_, m: Message):
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
-                            await m.reply_text(f"🚫 error: `{ep}`")
+                            await m.reply_text(f"naka ban si @baldomusicassistant kaya hindi ko maplay")
 
 
 
@@ -257,4 +257,4 @@ async def stream(_, m: Message):
                         reply_markup=keyboard,
                     )
                 except Exception as ep:
-                    await m.reply_text(f"🚫 error: `{ep}`")
+                    await m.reply_text(f"naka ban si @baldomusicassistant kaya hindi ko maplay")

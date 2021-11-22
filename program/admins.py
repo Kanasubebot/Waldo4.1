@@ -59,7 +59,7 @@ async def skip(client, m: Message):
     if len(m.command) < 2:
         op = await skip_current_song(chat_id)
         if op == 0:
-            await m.reply("❌ nothing is currently playing")
+            await m.reply("❌ wala naman po nakaplay")
         elif op == 1:
             await m.reply("✅ __Queues__ is empty.\n\n• userbot leaving voice chat")
         else:
@@ -101,7 +101,7 @@ async def stop(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("❌ *walang nakaplay lods**")
 
 
 @Client.on_message(
@@ -119,7 +119,7 @@ async def pause(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("❌ **walang nakaplay**")
 
 
 @Client.on_message(
@@ -137,11 +137,11 @@ async def resume(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("❌ **walang naka play po**")
 
 
 @Client.on_message(
-    command(["ingay", f"ingay@{BOT_USERNAME}", "shh"]) & other_filters
+    command(["ingay", f"ingay@{BOT_USERNAME}", "shh", "pre"]) & other_filters
 )
 @authorized_users_only
 async def mute(client, m: Message):
@@ -150,12 +150,12 @@ async def mute(client, m: Message):
         try:
             await call_py.mute_stream(chat_id)
             await m.reply(
-                "🔇 **Userbot muted.**\n\n• **To unmute the userbot, use the**\n» /unmute command."
+                "🔇 **uyyyy may chismis**\n\n• **teka teka baldo may chismis**"
             )
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("❌ **walang nakaplay po**")
 
 
 @Client.on_message(
@@ -168,12 +168,12 @@ async def unmute(client, m: Message):
         try:
             await call_py.unmute_stream(chat_id)
             await m.reply(
-                "🔊 **Userbot unmuted.**\n\n• **To mute the userbot, use the**\n» /mute command."
+                "🔊 **sure na ba? itutuloy ko na?**\n\n• **mga chismosa amputa para kang si aling cely**"
             )
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("❌ **wala po nakaplay**")
 
 
 @Client.on_callback_query(filters.regex("cbpause"))
